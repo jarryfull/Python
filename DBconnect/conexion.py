@@ -1,12 +1,12 @@
 import mysql.connector
 
-conn = mysql.connector.connect(user='jaimeale', 
-                               password='Jaimeale123!',
-                               host='127.0.0.1',
-                               database='angular')
+conn = mysql.connector.connect(user='USERNAME', 
+                               password='PASSWORD',
+                               host='IP_SERVER_DB',
+                               database='DATABASE')
 cursor = conn.cursor()
 
-query = ("SELECT * FROM angular.user")
+query = ("SELECT * FROM user")
 
 data = cursor.execute(query)
 for data in cursor:
